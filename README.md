@@ -27,7 +27,7 @@ This repository contains the schematic, simulation decks, and report for a CMOS 
    * **On-chip startup circuit**: Injects a pulse of current at power-up and turns itself off once normal bias is reached.  
 4. **Initial Simulation (–40 °C → 80 °C)**  
    * Tuned resistor R<sub>2</sub> (PTAT) and left-hand BJT sizing (CTAT).  
-   * Achieved 16 ppm / °C **but** V<sub>REF</sub> ≈ 1.37 V – outside spec. :contentReference[oaicite:3]{index=3}  
+   * Achieved 16 ppm / °C **but** V<sub>REF</sub> ≈ 1.37 V – outside spec.
 5. **Operating-Range Refinement**  
    * Restricted design spec to **20 °C → 80 °C** per TA guidance.  
    * Re-optimised R-ratios and device areas until the ΔV<sub>BE</sub>/V<sub>BE</sub> intersection produced a flat-topped V-T curve centred on 1.2 V.  
