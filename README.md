@@ -1,7 +1,7 @@
 # CMOS Band-Gap Reference (OrCAD)
 
 ## Introduction  
-This repository contains the schematic, simulation decks, and report for a CMOS band-gap reference (BGR) designed and verified in **OrCAD X**.  The circuit is based on a Brokaw-style topology and targets a **1.2 V reference voltage** with **< 100 ppm / °C** temperature drift, making it suitable for on-chip voltage references in data-converters, PLLs, and sensor interfaces. :contentReference[oaicite:1]{index=1}  
+This repository contains the schematic, simulation decks, and report for a CMOS band-gap reference (BGR) designed and verified in **OrCAD X**.  The circuit is based on a Brokaw-style topology and targets a **1.2 V reference voltage** with **< 100 ppm / °C** temperature drift, making it suitable for on-chip voltage references in data-converters, PLLs, and sensor interfaces. 
 
 ---
 
@@ -49,7 +49,4 @@ This repository contains the schematic, simulation decks, and report for a CMOS 
 
 The design meets both the reference-voltage target and the sub-100 ppm / °C drift spec while maintaining modest power dissipation.  Curvature outside the 20 °C – 80 °C band is primarily due to second-order V<sub>BE</sub> effects and resistor mismatch, which can be addressed in future silicon layout with common-centroid techniques. :contentReference[oaicite:7]{index=7}  
 
----
-
-## Repository Contents  
 
