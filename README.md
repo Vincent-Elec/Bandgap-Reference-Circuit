@@ -45,8 +45,8 @@ This repository contains the schematic, simulation decks, and report for a CMOS 
 | Temp. Coefficient | **≈ 72 ppm / °C** (20 °C – 80 °C) | ≤ 100 ppm / °C |
 | V<sub>MAX</sub>/V<sub>MIN</sub> | 1.2034 V / 1.1982 V | — |
 | Supply Current | 566.7 µA @ 2.3 V | — |
-| Power | 1.30 mW | — | :contentReference[oaicite:5]{index=5}  
+| Power | 1.30 mW | — | 
 
-The design meets both the reference-voltage target and the sub-100 ppm / °C drift spec while maintaining modest power dissipation.  Curvature outside the 20 °C – 80 °C band is primarily due to second-order V<sub>BE</sub> effects and resistor mismatch, which can be addressed in future silicon layout with common-centroid techniques. :contentReference[oaicite:7]{index=7}  
+The design meets both the reference-voltage target and the sub-100 ppm / °C drift spec while maintaining modest power dissipation.  Curvature outside the 20 °C – 80 °C band is primarily due to second-order V<sub>BE</sub> effects and resistor mismatch, which can be addressed in future silicon layout with common-centroid techniques.
 
 
