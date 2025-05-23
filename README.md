@@ -19,19 +19,18 @@ This repository contains the schematic, simulation decks, and report for a CMOS 
 ## Design Procedure  
 
 1. **Topology Selection** – Adopted the Brokaw BGR architecture to combine a CTAT V<sub>BE</sub> term with a PTAT ΔV<sub>BE</sub> term, enabling first-order temperature cancellation.  
-2. **Device & Model Choice** – Re-used the custom CMOS models characterized in Lab 4 rather than generic library parts for consistency across coursework projects.  
-3. **Core Schematic Capture**  
+2. **Core Schematic Capture**  
    * **Band-gap core**: Two matched BJTs biased at 18:1 current-density ratio.  
    * **Error amplifier**: Replaces a simple diff-pair to force ΔV<sub>BE</sub> accurately.  
    * **MOS current mirrors**: Generate PTAT current and bias all branches.  
    * **On-chip startup circuit**: Injects a pulse of current at power-up and turns itself off once normal bias is reached.  
-4. **Initial Simulation (–40 °C → 80 °C)**  
+3. **Initial Simulation (–40 °C → 80 °C)**  
    * Tuned resistor R<sub>2</sub> (PTAT) and left-hand BJT sizing (CTAT).  
    * Achieved 16 ppm / °C **but** V<sub>REF</sub> ≈ 1.37 V – outside spec.
-5. **Operating-Range Refinement**  
-   * Restricted design spec to **20 °C → 80 °C** per TA guidance.  
+4. **Operating-Range Refinement**  
+   * Restricted design spec to **20 °C → 80 °C** for more realistic range.  
    * Re-optimised R-ratios and device areas until the ΔV<sub>BE</sub>/V<sub>BE</sub> intersection produced a flat-topped V-T curve centred on 1.2 V.  
-6. **Final Verification**  
+5. **Final Verification**  
    * Performed temperature-sweep, bias-point, and supply-sensitivity analyses.  
    * Computed temperature coefficient and total power directly from PSpice probes.  
 
